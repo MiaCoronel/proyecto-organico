@@ -26,7 +26,7 @@ export default function RegistroPage() {
     if (result.success) {
       setSuccess(true);
       setTimeout(() => {
-        router.push('/login'); // Redirigir al login después de 2 seg
+        router.push('/login'); 
       }, 2000);
     } else {
       setError(result.error || 'Error desconocido al registrar');
