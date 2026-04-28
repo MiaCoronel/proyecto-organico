@@ -13,12 +13,12 @@ import BlogCard from '../components/BlogCard';
 // --- ¡NUEVO! Definición de las animaciones ---
 const fadeInDown = {
   hidden: { opacity: 0, y: -30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' }}
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }}
 };
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' }}
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }}
 };
 
 const staggerContainer = {
@@ -57,7 +57,7 @@ export default function BlogPage() {
             initial="hidden"
             animate="visible"
           >
-            Nuestro Blog
+            Nuestro Blog Orgánico
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl"
@@ -79,7 +79,7 @@ export default function BlogPage() {
           whileInView="visible" // Se anima al hacer scroll
           viewport={{ once: true, amount: 0.5 }} // Se anima una vez
         >
-          Nuestros Artículos
+          Artículos Recientes
         </motion.h2>
         
         {/* NUEVO: Contenedor 'stagger' para la cuadrícula */}
@@ -119,7 +119,7 @@ export default function BlogPage() {
           {/* ¡NUEVA ACCIÓN! (Botón de Link) */}
           <Link 
             href="/tienda" 
-            className="inline-block bg-green-600 text-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-green-700 transition-colors shadow-lg"
+            className="inline-block bg-green-700 text-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-green-700 transition-colors shadow-lg"
           >
             Explorar la Tienda
           </Link>
