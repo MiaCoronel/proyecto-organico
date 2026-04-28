@@ -13,12 +13,12 @@ import BlogCard from '../components/BlogCard';
 // --- ¡NUEVO! Definición de las animaciones ---
 const fadeInDown = {
   hidden: { opacity: 0, y: -30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }}
+  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut' }}
 };
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }}
+  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut' }}
 };
 
 const staggerContainer = {
@@ -79,7 +79,7 @@ export default function BlogPage() {
           whileInView="visible" // Se anima al hacer scroll
           viewport={{ once: true, amount: 0.5 }} // Se anima una vez
         >
-          Artículos Recientes
+          Nuestros Artículos
         </motion.h2>
         
         {/* NUEVO: Contenedor 'stagger' para la cuadrícula */}
